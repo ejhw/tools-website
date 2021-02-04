@@ -38,3 +38,8 @@ To add new dependencies, add them to package.json and rerun `npm install`.
 
 The static pages are contained in the `app/` directory. Pushing the contents of this directory to github-pages should be all it takes to deploy the website.
 
+Run this command to deploy to gh-pages: 
+
+```
+git subtree push --prefix app origin gh-pages
+```
