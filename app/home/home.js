@@ -65,14 +65,21 @@ angular.module('myApp.home', ['ngRoute'])
 		var seedx = seedRect.right;
 
 		// arrow from g4 back to under seed
-		$scope.drawLine(g4x, g4y1, g4x, g4y2, "white", false);
-		$scope.drawLine(g4x + 2, g4y1, seedx, g4y1, "white", true);
+		// $scope.drawLine(g4x, g4y1, g4x, g4y2, "white", false);
+		// $scope.drawLine(g4x + 2, g4y1, seedx, g4y1, "white", true);
 
 		var usx = seedRect.left + (seedRect.width / 2);
 		var usy1 = seedRect.top - 10;
 		var usy2 = usy1 - 25;
 		// arrow from under seed to seed
 		$scope.drawLine(usx, usy1, usx, usy2, "white", true);
+
+		// arrow from g4 to  under seed 
+		var y1 = seedRect.bottom + 25;
+		var y2 = y1 + 25;
+		var x2 = usx + 100;
+		$scope.drawLine(usx, y2, usx, y1, "white", true);
+		$scope.drawLine(usx-2, y2, x2, y2, "white", false);
 
 	}
 
