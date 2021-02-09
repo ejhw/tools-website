@@ -280,6 +280,10 @@ a {
 	width:100%;
 }
 
+.card-img-90 {
+  width:90%;
+}
+
 .card-img-sm {
   width:80%;
   padding-left:15%;
@@ -331,7 +335,7 @@ p {
 .bsync1 {
   position: relative;
   top:-200px;
-  left: 87%;
+  left: 81%;
   width: 31%;
   border-radius: 20%;
   border: 4px solid #F5AF13;
@@ -373,8 +377,8 @@ p {
 
 .bsync2 {
   position: relative;
-  top:-200px;
-  left: 89%;
+  top:-120px;
+  left: 93%;
   width: 23%;
   border-radius: 20%;
   border: 4px solid #F5AF13;
@@ -427,7 +431,7 @@ p {
 }
 
 .card-margin {
-  margin-bottom: 2.5rem;
+  margin-bottom: 3.5rem;
 }
 
 .big {

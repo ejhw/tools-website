@@ -79,7 +79,7 @@ angular.module('myApp.home', ['ngRoute'])
 		var y2 = y1 + 25;
 		var x2 = usx + 100;
 		$scope.drawLine(usx, y2, usx, y1, "white", true);
-		$scope.drawLine(usx-2, y2, x2, y2, "white", false);
+		// $scope.drawLine(usx-2, y2, x2, y2, "white", false);
 
 	}
 
