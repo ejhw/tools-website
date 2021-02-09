@@ -4,6 +4,16 @@ angular.module('myApp.views', ['ngRoute'])
 
 .controller('ViewsCtrl', ['$scope', '$location', '$route', function($scope, $location, $route) {
 
+	$scope.activeMenu = false;
+
+	$scope.showMenu = function() {
+		$scope.activeMenu = true;
+	};
+
+	$scope.hideMenu = function() {
+		$scope.activeMenu = false;
+	};
+
 	$scope.isActive = function (viewLocation) { 
 		$scope.activeVal = false;
 
