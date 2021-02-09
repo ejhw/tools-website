@@ -1,0 +1,70 @@
+<div ng-include="'views/includes/topnav.html'"></div>
+
+<div class="row pt-3">
+
+	<div class="col-3 v-divider">
+		<div class="mb-4"><h2 class="pl-3">Goals & Outcomes</h2></div>
+		<div id="tool-nav">
+			<ul class="nav flex-column">
+				<li class="nav-item">
+			    <a class="nav-link" ng-href="#!/{{baseURL}}/" ng-click="setActive('home')" ng-class="{ active{{navNum}}: subnavIsActive('home')}"><span class="mx-3 align-center"><i class="fas fa-info-circle fa-2x"></i></span><span class="align-center">Goals & Outcomes</span></a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" ng-href="#!/{{baseURL}}/analyze" ng-click="setActive('analyze')" ng-class="{ active{{navNum}}: subnavIsActive('analyze')}"><span class="mx-3 align-center"><img src="images/com-resstock-outcomes-icon.svg" width="8%"></span><span class="align-center">Analyze Building Stock</span></a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" ng-href="#!/{{baseURL}}/target" ng-click="setActive('target')" ng-class="{ active{{navNum}}: subnavIsActive('target')}"><span class="ml-3 mr-4 align-center"><img src="images/better-outcomes-icon.svg" width="8%"></span><span class="align-center">Target Efficiency Upgrade Areas</span></a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" ng-href="#!/{{baseURL}}/compliance" ng-click="setActive('compliance')" ng-class="{ active{{navNum}}: subnavIsActive('compliance')}"><span class="ml-3 mr-4 align-center"><img src="images/assetscore-outcomes-icon.svg" width="6%"></span><span class="align-center">Achieve Compliance</span></a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" ng-href="#!/{{baseURL}}/customize" ng-click="setActive('customize')" ng-class="{ active{{navNum}}: subnavIsActive('customize')}"><span class="ml-3 mr-4 align-center"><img src="images/thirdparty-outcomes-icon.svg" width="8%"></span><span class="align-center">Customize your workflow</span></a>
+			  </li>
+			</ul>
+		</div>
+	</div>
+	<div class="col tool-main">
+		<div ng-if="subNav === 'home'">
+			<p>Learn more about how the building energy data tools can help your organization realize its ultimate goals</p>
+		</div>
+		<div ng-if="subNav === 'analyze'">
+			<div class="row">
+				<div class="col-3 my-auto"><div class="pl-4"><h6>Analyze Building Stock</h6></div><img class="card-img img-g1" src="images/com-resstock-outcomes-icon.svg"></div>
+				<div class="col-7 my-auto">
+					<p>Analysis tools will help states, municipalities, utilities, and manufacturers identify the most impactful building stock improvements.</p>
+					<div><img src="images/comstock_outcome_pathway-01.png"></div>
+				</div>
+			</div>
+		</div>	
+		<div class="mt-4" ng-if="subNav === 'target'">
+			<div class="row">
+				<div class="col-3 my-auto"><div class="pl-4"><h6>Target Efficiency Upgrade Areas</h6></div><img class="card-img img-g2" src="images/better-outcomes-icon.svg" alt="BETTER Logo"></div>
+				<div class="col-7 my-auto">
+					<p>Identify measures and suggest areas for deeper evaluations. </p>
+					<div><img src="images/better_outcome_pathway-01.png"></div>
+				</div>
+			</div>
+		</div>	
+		<div class="mt-4" ng-if="subNav === 'compliance'">
+			<div class="row">
+				<div class="col-3 my-auto"><div class="pl-4"><h6>Achieve Compliance</h6></div><img class="card-img img-g3" src="images/assetscore-outcomes-icon.svg" alt="Asset Score Logo"></div>
+				<div class="col-7 my-auto">
+					<p>Use Asset Score to identify cost-effective energy efficiency measures to help buildings deliver EUI and GHGe metrics for compliance with a building performance policy. </p>
+					<div><img src="images/asset-score-outcome_pathway-01.png"></div>
+				</div>
+			</div>
+		</div>	
+		<div class="mt-4" ng-if="subNav === 'customize'">
+			<div class="row">
+				<div class="col-3 my-auto"><div class="pl-4"><h6>Customize</h6></div><img class="card-img img-g4" src="images/thirdparty-outcomes-icon.svg" alt="Third Party Tools"></div>
+				<div class="col-7 my-auto">
+					<p>Various tools and APIs are available to customize your workflow, connect to CRMs, add create data visualizations. Visit the <a href="#!/developers" class="color-4 bold-link">Developers</a> page to learn more about these tools and capabilities.</p>
+				</div>
+			</div>
+		</div>
+					
+	</div>
+	
+</div>
+<div class="mt-5" ng-include="'views/includes/footer.html'"></div>

@@ -109,6 +109,13 @@ myapp.config(['$locationProvider', '$routeProvider', function($locationProvider,
     baseURL: 'asset-score',
     navNum: 3
   });  
+  $routeProvider.when('/goals/:subNav?', {
+    templateUrl: 'views/tools/goals.html',
+    controller: 'ToolsCtrl',
+    toolName: 'Goals',
+    baseURL: 'goals',
+    navNum: 4
+  }); 
   $routeProvider.when('/third-party/:subNav?', {
     templateUrl: 'views/tools/third-party.html',
     controller: 'ToolsCtrl',
